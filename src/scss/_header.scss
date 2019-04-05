@@ -52,9 +52,7 @@
     }
     &__right {
         display: flex;  
-        align-items: center; 
-        position: relative;
-        z-index: 10; 
+        align-items: center;  
     }
     &__burger {
         background-color: transparent;  
@@ -93,8 +91,6 @@
 .logo {
     width: 69px; 
     height: 51px; 
-    position: relative;
-    z-index: 10;
     transition: all 0.3s;
     &:hover {
         opacity: 0.7; 
