@@ -1,0 +1,128 @@
+.intro { 
+    margin-top: 90px; 
+    &__inner {
+        margin: 0 auto;
+        max-width: 33.6%;  
+        padding-top: 235px; 
+        padding-bottom: 169px; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        &_second {
+            padding-top: 283px;
+            padding-bottom: 115px;   
+            margin-left: 380px;   
+        }    
+    }
+    &__title {
+        font-family: 'Segoe UI';
+        font-size: 5.7vw;   
+        text-transform: uppercase;
+        color: $color-primary;    
+        margin-bottom: 13%; 
+        width: 100%;
+        &_black {
+            font-family: inherit;  
+            color: $color-main;
+            position: relative;
+            z-index: 0;
+        }
+    }
+    &__btn {
+        padding: 17px 66px;   
+        background-color: $color-main; 
+        border: none; 
+        color: $color-primary;
+        font-size: 14px;
+        text-transform: uppercase; 
+        cursor: pointer; 
+        outline: none; 
+        transition: all 0.3s; 
+        &_second {
+            padding: 20px 39px;  
+        } 
+        &:hover {   
+            transition: all 0.3s; 
+            opacity: 0.8;
+        } 
+        &:active {
+            box-shadow: inset 2px 1px 10px $color-primary;
+            transition: all 0.2s;
+        }
+    }
+    &__slide {
+        background-image: url('../img/del/intro_bg1.jpg'); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        outline: none;
+        &_second {
+            background-image: url('../img/del/intro_bg2.jpg'); 
+            background-repeat: no-repeat;
+            background-size: cover;  
+        }  
+    }
+}
+@media (max-width: $lg) {
+    .intro {
+        &__slide {
+            background-size: 120%; 
+            background-position: right -30px top 0px; 
+            &_second {
+                background-position: left top; 
+            }
+        }           
+        &__inner {
+            max-width: 360px;
+            margin-left: 110px; 
+            padding-top: 147px;
+            padding-bottom: 164px;
+            align-items: flex-start;  
+            &_second {
+                padding-top: 141px;     
+            }
+        }
+        &__title {
+            font-size: 60px; 
+        }
+    }
+}
+@media (max-width: $md) {
+    .intro { 
+        &__slide {
+            background-size: 1000px;
+            background-position: right top;
+            &_second {  
+                background-position: center top;   
+            }  
+        } 
+        &__inner {
+            margin: 0 auto;
+            align-items: center; 
+        }
+        &__title {
+            text-align: center;
+            font-size: 50px;
+        }
+        &__btn {
+            width: 286px;
+        }
+    }
+}
+@media (max-width: $sm) {
+    .intro {
+        &__slide { 
+            background-position: right -70px top 0;
+            &_second {
+                background-position: right -250px top -20px;
+            }
+        }
+        &__inner {
+            padding-left: 15px;
+            padding-right: 15px; 
+        }
+        &__title {
+            font-size: 49px;
+         }     
+}
+} 

@@ -1,0 +1,42 @@
+// Media-vars
+$xxl: 1260px;
+$lg: 992px;
+$md: 767px;  
+$sm: 576px;
+
+// Color-vars 
+$color-main: #000000;
+$color-primary: #ffffff;
+$color-silver: #c9c9c9;
+$color-placeholder: #6c6c6c;
+$color-footer-btn: #c7c7c7;
+
+
+
+// Cross
+.cross {
+    width: 30px;
+    height: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cross div {
+    width: 100%;
+    height: 2px;
+    background-color: $color-main;
+}
+.cross div:first-of-type {
+    transform-origin: right;
+    transform: rotate(-45deg);
+}
+.cross div:last-of-type {
+    transform-origin: right;
+    transform: rotate(45deg);
+}
+
+// Title 
+.title {
+    font-size: 48px;
+    text-transform: uppercase;
+}

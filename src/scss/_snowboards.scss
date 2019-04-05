@@ -1,0 +1,140 @@
+.snowboards {
+    &__inner {
+        padding: 150px 0 200px 0; 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__title {
+        color: $color-main; 
+        margin-bottom: 38px;
+    }
+    &__subtitle {
+        color: $color-main;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 26px;
+    }
+    &__cross {
+        margin-bottom: 100px;
+    }
+    &__slider { 
+        width: 100%;     
+        margin-bottom: 58px; 
+        position: relative;  
+    }
+    &__outer {
+        width: 100%; 
+    }
+    &__wrap {
+        width: 100%; 
+        margin: 0 auto;
+    }
+    &__item {
+        width: 167px;   
+        outline: none;      
+    }
+    &__change {
+        width: 100%;  
+        display: flex;
+        justify-content: center;
+        cursor: pointer; 
+    }
+    &__img {   
+        width: 167px;  
+        height: 400px; 
+    }
+    &__info {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $color-main; 
+    }
+    &__prev {
+        width: 122px;
+        opacity: 0.5; 
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        left: 0;   
+        transform: translateY(-50%);
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+        &:active {
+            opacity: 0.7;
+            transition: all 0.1s;
+        }
+    }
+    &__next {
+        width: 122px; 
+        opacity: 0.5;
+        position: absolute;
+        z-index: 5; 
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%); 
+        transition: all 0.3s;
+        cursor: pointer; 
+        &:hover {
+            opacity: 1;
+        }
+        &:active {
+            opacity: 0.7;
+            transition: all 0.1s;
+        }
+    }
+}
+.slick-slide {
+    opacity: 0.5;
+    transition: all 0.5s;   
+}
+.slick-current  {
+    transition: all 0.5s;    
+    opacity: 1; 
+}
+@media (max-width: $lg) {
+    .snowboards {
+        &__inner {
+            padding: 35px 0; 
+        }
+        &__cross {
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (max-width: $md) {
+    .snowboards {
+        &__title {
+            font-size: 28px;
+            margin-bottom: 20px
+        }  
+        &__prev {
+            display: none;
+        }
+        &__next {
+            display: none; 
+        }
+        &__cross {
+            display: none;
+        }
+        &__slider {
+            margin-bottom: 42px; 
+        }
+    }
+}
+@media (max-width: $sm) {
+    .snowboards {
+        &__subtitle {
+            text-align: center;
+            max-width: 243px;     
+        }
+        &__info {
+            max-width: 170px;
+            text-align: center;  
+        }
+    }
+}
+
