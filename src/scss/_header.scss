@@ -94,16 +94,21 @@
     width: 69px; 
     height: 51px; 
     position: relative;
-    z-index: 10; 
+    z-index: 10;
+    transition: all 0.3s;
+    &:hover {
+        opacity: 0.7; 
+        transition: all 0.3s; 
+    }
+    &:active {
+        opacity: 0.5;
+        transition: all 0.1s;
+        
+    }
     &__img {
         width: 100%;
         height: 100%;
-        &:hover {
-            opacity: 0.7;  
-        }
-        &:active {
-            opacity: 0.5;
-        }
+        transition: all 0.3s;
     }
 }
 .search {
@@ -115,16 +120,19 @@
         cursor: pointer;
         padding: 0;  
         outline: none;
+        transition: all 0.3s;
+        &:hover {
+            opacity: 0.7;
+            transition: all 0.3s;
+        }
+        &:active {
+            opacity: 0.5;
+            transition: all 0.1s;
+        } 
     }
     &__icon {
         width: 100%;  
         vertical-align: middle; 
-        &:hover {
-            opacity: 0.7;  
-        }
-        &:active {
-            opacity: 0.5;
-        } 
     }
 }
 .shopping {
@@ -138,16 +146,19 @@
         cursor: pointer;
         padding: 0;
         outline: none;
+        transition: all 0.3s;
+        &:hover {
+            opacity: 0.7;
+            transition: all 0.3s; 
+        }
+        &:active {
+            opacity: 0.5;
+            transition: all 0.1s;
+        }
     }
     &__icon { 
         width: 100%; 
         vertical-align: middle;
-        &:hover {
-            opacity: 0.7;  
-        }
-        &:active {
-            opacity: 0.5;
-        }
     }
     &__money {
         font-size: 13px;
